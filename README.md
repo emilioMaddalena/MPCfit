@@ -6,7 +6,7 @@ This code is the supplementary material for the papers
 @article{maddalena2021embedded,
   title={Embedded PWM Predictive Control of DC-DC Power Converters 
          Via Piecewise-Affine Neural Networks},
-  author={Maddalena, E. T. and Specq, Martin W. F. and Wisniewski, V. L. and Jones, C. N.},
+  author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
   journal={IEEE Open Journal of the Industrial Electronics Society},
   volume={2},
   pages={199--206},
@@ -20,7 +20,7 @@ and
 ```
 @article{maddalena2020neural,
   title={A neural network architecture to learn explicit MPC controllers from data},
-  author={Maddalena, Emilio Tanowe and Moraes, CG da S and Waltrich, Gierri and Jones, Colin N},
+  author={Maddalena, E. T. and Moraes, C. G. da S. and Waltrich, G. and Jones, C. N.},
   journal={IFAC-PapersOnLine},
   volume={53},
   number={2},
