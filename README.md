@@ -4,8 +4,9 @@ This code is the supplementary material for the papers
 
 ```
 @article{maddalena2021embedded,
-  title={Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks},
-  author={Maddalena, Emilio T and Specq, Martin WF and Wisniewski, Viviane L and Jones, Colin N},
+  title={Embedded PWM Predictive Control of DC-DC Power Converters 
+         Via Piecewise-Affine Neural Networks},
+  author={Maddalena, E. T. and Specq, Martin W. F. and Wisniewski, V. L. and Jones, C. N.},
   journal={IEEE Open Journal of the Industrial Electronics Society},
   volume={2},
   pages={199--206},
