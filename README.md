@@ -1,6 +1,6 @@
 # MPCfit
 
-This code is the supplementary material for the papers
+This repository contains all files and code associated with the papers
 
 ```
 @article{maddalena2021embedded,
@@ -30,4 +30,10 @@ and
 }
 ```
 
+## Summary :books:
+
+Write something here...
+
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/picture.png)
+
+This picture shows an exact explicit MPC controller and its simplified representation learned with a small QP neural network.
