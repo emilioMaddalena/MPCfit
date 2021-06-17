@@ -1,10 +1,10 @@
 ## Folders
 
-:open_file_folder: MATLAB: PDF documents relevant to the project.
+:open_file_folder: MATLAB: Contains the dynamics of the buck converter, the exact MPC controller code (design, explicit form and sampling). Run `model.m` before running `main.m`.
 
-:open_file_folder: data: C code for the STM32L4 microcontroller. The projects were developed in the STM32 CUBE-IDE and CUBE-MX environments.
+:open_file_folder: data: Stores the MPC controller samples obtained with the MATLAB scripts and also the PWA-NN models obtained with the python scripts.
 
-:open_file_folder: python: OBS. The PWA-NN python code is built on top of qpth (https://locuslab.github.io/qpth/).
+:open_file_folder: python: OBS. Contains the PWA-NN python code, which reads the MPC samples and trains the PWA-NN. Example of usage `run_fit n_z`, where `n_z` is the size of the network (see associated, section IV). OBS: the PWA-NN is built on top of `qpth` ().
 
 ## MATLAB dependencies
 
@@ -16,4 +16,4 @@ Gurobi (https://www.gurobi.com/downloads/)
 
 ## Python dependencies
 
-See requirements.txt in `./python/`
+See `requirements.txt` in `./python/`
