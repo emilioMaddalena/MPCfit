@@ -1,11 +1,39 @@
 # MPCfit
 
-This code is the supplementary material for the paper **KPC: Learning-Based Model Predictive Control with Deterministic Guarantees** by Emilio T. Maddalena, Paul Scharnhorst, Yuning Jiang and Colin N. Jones.
+This repository contains all files and code associated with the papers
+
+```
+@article{maddalena2021embedded,
+  title={Embedded PWM Predictive Control of DC-DC Power Converters 
+         Via Piecewise-Affine Neural Networks},
+  author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
+  journal={IEEE Open Journal of the Industrial Electronics Society},
+  volume={2},
+  pages={199--206},
+  year={2021},
+  publisher={IEEE}
+}
+```
+
+and
+
+```
+@article{maddalena2020neural,
+  title={A neural network architecture to learn explicit MPC controllers from data},
+  author={Maddalena, E. T. and Moraes, C. G. da S. and Waltrich, G. and Jones, C. N.},
+  journal={IFAC-PapersOnLine},
+  volume={53},
+  number={2},
+  pages={11362--11367},
+  year={2020},
+  publisher={Elsevier}
+}
+```
+
+## Summary :books:
+
+Write something here...
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/picture.png)
 
-# References:
-
-E. T. Maddalena, M. W. F. Specq, V. L. Wisniewski, C. N. Jones. "PWA Neural Network Learning: Enabling Fast Embedded Predictive Control of Dc-Dc Power Converters", (2020).
-
-E. T. Maddalena, C. G. da S. Moraes, G. Waltrich, C. N. Jones. "A Neural Network Architecture to Learn Explicit MPC Controllers from Data", IFAC World Congress (2020).
+This picture shows an exact explicit MPC controller and its simplified representation learned with a small QP neural network.
