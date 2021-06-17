@@ -1,5 +1,5 @@
 
-:electric_plug: Buck dc-dc converter
+Buck converter :zap:
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
 
@@ -11,14 +11,14 @@
 
 :open_file_folder: Matlab:
 
-:open_file_folder: PCB: The schematic and layout file for the buck dc-dc converter printed circuit board. The design was done in Autodesk Eagle 9.5.
+:open_file_folder: PCB: The schematic, layout and gerber files for the buck dc-dc converter printed circuit board. The design was carried out in Autodesk Eagle 9.5.
 
 :open_file_folder: Scope: A set of oscilloscope screenshots obtained during operation (refer to the paper), and their associated .csv files.
 
 :open_file_folder: Sketch: Illustration files for each of the figures present in the paper. Drawn in Sketch 68.2.
 
 
-Reference:
+Reference :books:
 
 ```
 @article{maddalena2021embedded,
