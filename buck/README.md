@@ -1,6 +1,8 @@
 
 ## Buck converter :zap:
 
+A schemtic of the dc-dc converter: 
+
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
 
 ## Folders
