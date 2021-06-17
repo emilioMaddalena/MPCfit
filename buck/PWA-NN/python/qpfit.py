@@ -1,3 +1,6 @@
+#from qpth.qp import QPFunction
+
+import qpth
 from qpth.qp import QPFunction
 
 import torch

@@ -1,27 +1,27 @@
 import os
 import sys
 import csv
-print(sys.version)
+#print(sys.version)
 
 import numpy as np
-import timeit
+#timeit
 import torch
-import scipy.io as sio
 import pandas as pd
 
 from qpfit import QPNet
 from qpfit import QPDataset
+
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 
-torch.set_num_threads(os.cpu_count())
-print("Number of threads = " + str(torch.get_num_threads()) + "\n")
+#torch.set_num_threads(os.cpu_count())
+#print("Number of threads = " + str(torch.get_num_threads()) + "\n")
 
 param = dict()
 param['nVar'] = int(sys.argv[1]) # num of parameters to be used n_z
 param['maxIter'] = 10
 param['batch_size'] = 50
-param['numEpoch'] = 2#150
+param['numEpoch'] = 2
 param['log_interval'] = 10000
 param['learning_rate'] = 1e-3
 
@@ -42,7 +42,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 qp_loader = QPDataset(datafile)
 dataloader = DataLoader(qp_loader, batch_size=param['batch_size'],
-                        shuffle=True, num_workers=torch.get_num_threads(), pin_memory=True)
+                        shuffle=True, pin_memory=True)
 
 # Initialize the model
 nParam = qp_loader.x.shape[1]

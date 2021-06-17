@@ -1,9 +1,0 @@
-*.pyc
-build
-dist
-*.egg-info
-gurobi.log
-
-*.html
-
-.ipynb_checkpoints
