@@ -1,5 +1,5 @@
 
-Buck converter :zap:
+## Buck converter :zap:
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
 
@@ -18,7 +18,7 @@ Buck converter :zap:
 :open_file_folder: Sketch: Illustration files for each of the figures present in the paper. Drawn in Sketch 68.2.
 
 
-Reference :books:
+## Reference :books:
 
 ```
 @article{maddalena2021embedded,
