@@ -19,6 +19,10 @@ A schemtic of the dc-dc converter:
 
 :open_file_folder: Sketch: Illustration files for each of the figures present in the paper. Drawn in Sketch 68.2.
 
+## Dependencies
+
+Gurobi (https://www.gurobi.com/downloads/)
+
 
 ## Reference :books:
 
