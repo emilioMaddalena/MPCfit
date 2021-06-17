@@ -2,7 +2,6 @@
 % 'Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks'
 % 
 % Authors: E. T. Maddalena, M. W. F. Specq, V. L. Wisniewski and C. N. Jones
-%
 
 clc;
 clear;
@@ -37,7 +36,7 @@ b2 = (Rc*Ro*(Vin+Vj-Ron*x1_eq))/((Rc+Ro)*L);
 
 A = [a11 a12; a21 a22];
 B = [b1;b2];
-C = [1 0];
+C = [0 1];
 
 if det([C;C*A]) ~= 0 && det([B A*B]) ~= 0
     disp("Observable and controllable");
@@ -49,4 +48,9 @@ G = ss(A,B,C,0);
 % Discrete state space model
 G = c2d(G,Ts);
 
-save sys_params
+model_params.A = G.A;
+model_params.B = G.B;
+model_params.C = G.C;
+model_params.Ts = Ts;
+
+save model_params model_params

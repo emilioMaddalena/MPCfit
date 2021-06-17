@@ -74,7 +74,7 @@ set(gcf,'color','w');
 %% Sampling the exact MPC controller
 
 nSamples = 5e3; 
-name = 'dataset';
+name = 'MATLABsamples';
 
 XX = [];
 UU = [];
@@ -114,7 +114,7 @@ for i = 1:nSamples
 end
 
 fprintf('Saving data in file %s.mat\n', name);
-save(['./data/' name],'X','U')
+save(['../data/' name],'X','U')
 fprintf('~~Sampling process concluded~~\n');
 
 %% Run python scripts to process the data and find the PWA-NN parameters
@@ -129,9 +129,9 @@ fprintf('~~Sampling process concluded~~\n');
 % feasible range, i.e. xmin <= x <= xmax
 
 % Select the file to be loaded 
-PYTHONfile = 'NNparams_var_3_run_2_epoch_109';
+PYTHONfile = 'NNparams_var_3_epoch_109';
 fprintf('Loading Neural Network parameters... \n');
-filePath = ['./data/' PYTHONfile '.mat'];
+filePath = ['../data/' PYTHONfile '.mat'];
 fit = load(filePath);
 
 % Extracting PWA-NN parameters
