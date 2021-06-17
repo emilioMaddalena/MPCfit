@@ -1,8 +1,16 @@
-# MPCfit
+## MPCfit
 
+Lightweight MPC approximation through neural networks.
+
+Evolution across epochs:
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/fitting.gif)
 
-This repository contains all files and code associated with the papers
+Final result:
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png)
+
+## Description :books:
+
+## References :books:
 
 ```
 @article{maddalena2021embedded,
@@ -31,11 +39,3 @@ and
   publisher={Elsevier}
 }
 ```
-
-## Summary :books:
-
-Write something here...
-
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png)
-
-This picture shows an exact explicit MPC controller and its simplified representation learned with a small QP neural network.
