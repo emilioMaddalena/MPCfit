@@ -4,7 +4,7 @@
 
 :open_file_folder: data: Stores the MPC controller samples obtained with the MATLAB scripts and also the PWA-NN models obtained with the python scripts.
 
-:open_file_folder: python: Contains the PWA-NN python code, which reads the MPC samples and trains the PWA-NN. Example of usage `python run_fit n_z`, where `n_z` is the size of the network (see associated, section IV). OBS: the PWA-NN is built on top of `qpth` (https://locuslab.github.io/qpth/).
+:open_file_folder: python: Contains the PWA-NN python code, which reads the MPC samples and trains the PWA-NN. Example of usage `python run_fit n_z`, where `n_z` is the size of the network. OBS: the PWA-NN is built on top of `qpth` (https://locuslab.github.io/qpth/).
 
 ## MATLAB dependencies
 
