@@ -14,7 +14,7 @@
 
 OBS. The PWA-NN code is built on top of qpth (https://locuslab.github.io/qpth/).
 
-## MATLAB Dependencies
+## MATLAB dependencies
 
 YALMIP (https://yalmip.github.io/)
 
@@ -22,6 +22,6 @@ MPT3 (https://www.mpt3.org/)
 
 Gurobi (https://www.gurobi.com/downloads/)
 
-## Python Dependencies
+## Python dependencies
 
 See requirements.txt in ./python/
