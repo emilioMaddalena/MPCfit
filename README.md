@@ -17,8 +17,7 @@ Final results:
 
 ```
 @article{maddalena2021embedded,
-  title={Embedded PWM Predictive Control of DC-DC Power Converters 
-         Via Piecewise-Affine Neural Networks},
+  title={Embedded PWM predictive control of DC-DC power converters via piecewise-affine neural networks},
   author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
   journal={IEEE Open Journal of the Industrial Electronics Society},
   volume={2},
