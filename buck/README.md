@@ -1,6 +1,7 @@
 
-:electric_plug:
+:electric_plug: Buck dc-dc converter
 
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
 
 ## Folders
 
@@ -31,7 +32,3 @@ Reference:
   publisher={IEEE}
 }
 ```
-
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/picture.png)
-
-This picture shows an exact explicit MPC controller and its simplified representation learned with a small QP neural network.
