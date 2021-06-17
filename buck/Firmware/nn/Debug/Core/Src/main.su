@@ -1,0 +1,16 @@
+main.c:102:6:swap	24	static
+main.c:109:5:partition	40	static
+main.c:127:6:quickSort	32	static
+main.c:142:5:get_median	24	static
+main.c:149:6:HAL_TIM_PeriodElapsedCallback	264	static
+main.c:345:5:main	8	static
+main.c:401:6:SystemClock_Config	232	static
+main.c:463:13:MX_ADC1_Init	48	static
+main.c:528:13:MX_ADC2_Init	32	static
+main.c:585:13:MX_DAC1_Init	48	static
+main.c:633:13:MX_TIM2_Init	48	static
+main.c:682:13:MX_TIM3_Init	40	static
+main.c:727:13:MX_USART2_UART_Init	8	static
+main.c:760:13:MX_DMA_Init	16	static
+main.c:781:13:MX_GPIO_Init	48	static
+main.c:817:6:Error_Handler	4	static
