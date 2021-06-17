@@ -13,7 +13,7 @@ Final results:
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png)
 
-<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png" width="115" height="98">
+<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png" width="1150/2" height="979/2">
 
 ## References :books:
 
