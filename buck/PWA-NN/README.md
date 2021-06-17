@@ -1,10 +1,3 @@
-
-## Buck converter :zap:
-
-A schemtic of the dc-dc converter: 
-
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
-
 ## Folders
 
 :open_file_folder: Documents: PDF documents relevant to the project.
@@ -19,23 +12,16 @@ A schemtic of the dc-dc converter:
 
 :open_file_folder: Sketch: Illustration files for each of the figures present in the paper. Drawn in Sketch 68.2.
 
-## Dependencies
+OBS. The PWA-NN code is built on top of qpth (https://locuslab.github.io/qpth/).
+
+## MATLAB Dependencies
 
 YALMIP (https://yalmip.github.io/)
 
+MPT3 (https://www.mpt3.org/)
+
 Gurobi (https://www.gurobi.com/downloads/)
 
+## Python Dependencies
 
-## Reference :books:
-
-```
-@article{maddalena2021embedded,
-  title={Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks},
-  author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
-  journal={IEEE Open Journal of the Industrial Electronics Society},
-  volume={2},
-  pages={199--206},
-  year={2021},
-  publisher={IEEE}
-}
-```
+See requirements.txt in ./python/
