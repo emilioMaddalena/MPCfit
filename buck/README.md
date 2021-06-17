@@ -1,6 +1,23 @@
-# MPCfit
 
-This repository contains all files and code associated with the papers
+:electric_plug:
+
+
+## Folders
+
+:open_file_folder: Documents:
+
+:open_file_folder: Firmware:
+
+:open_file_folder: Matlab:
+
+:open_file_folder: PCB:
+
+:open_file_folder: Scope:
+
+:open_file_folder: Sketch:
+
+
+Reference:
 
 ```
 @article{maddalena2021embedded,
@@ -14,25 +31,6 @@ This repository contains all files and code associated with the papers
   publisher={IEEE}
 }
 ```
-
-and
-
-```
-@article{maddalena2020neural,
-  title={A neural network architecture to learn explicit MPC controllers from data},
-  author={Maddalena, E. T. and Moraes, C. G. da S. and Waltrich, G. and Jones, C. N.},
-  journal={IFAC-PapersOnLine},
-  volume={53},
-  number={2},
-  pages={11362--11367},
-  year={2020},
-  publisher={Elsevier}
-}
-```
-
-## Summary :books:
-
-Write something here...
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/picture.png)
 
