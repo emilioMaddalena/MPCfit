@@ -1,5 +1,7 @@
 # MPCfit
 
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/fitting.gif)
+
 This repository contains all files and code associated with the papers
 
 ```
