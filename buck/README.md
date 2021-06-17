@@ -21,6 +21,7 @@ A schemtic of the dc-dc converter:
 
 ## Dependencies
 
+YALMIP (https://yalmip.github.io/)
 Gurobi (https://www.gurobi.com/downloads/)
 
 
