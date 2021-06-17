@@ -11,8 +11,6 @@ Evolution across epochs:
 
 Final results:
 
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png)
-
 <img src="https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png" width="700" height="595">
 
 ## References :books:
