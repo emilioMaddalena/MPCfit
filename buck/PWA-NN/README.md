@@ -16,4 +16,4 @@ Gurobi (https://www.gurobi.com/downloads/)
 
 ## Python dependencies
 
-See requirements.txt in ./python/
+See requirements.txt in `./python/`
