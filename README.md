@@ -1,4 +1,6 @@
-## MPCfit
+# MPCfit
+
+## Description :books:
 
 Lightweight MPC approximation through neural networks.
 
@@ -10,8 +12,6 @@ Evolution across epochs:
 Final results:
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png)
-
-## Description :books:
 
 ## References :books:
 
@@ -27,9 +27,6 @@ Final results:
   publisher={IEEE}
 }
 ```
-
-and
-
 ```
 @article{maddalena2020neural,
   title={A neural network architecture to learn explicit MPC controllers from data},
