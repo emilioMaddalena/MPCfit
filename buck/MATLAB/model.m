@@ -1,3 +1,9 @@
+% Supplementary material for the paper:
+% 'Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks'
+% 
+% Authors: E. T. Maddalena, M. W. F. Specq, V. L. Wisniewski and C. N. Jones
+%
+
 clc;
 clear;
 close all;
@@ -42,3 +48,5 @@ G = ss(A,B,C,0);
 
 % Discrete state space model
 G = c2d(G,Ts);
+
+save sys_params
