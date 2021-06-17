@@ -1,5 +1,5 @@
 
-## Buck converter :zap:
+## Buck converter 
 
 A schemtic of the dc-dc converter: 
 
@@ -18,17 +18,3 @@ A schemtic of the dc-dc converter:
 :open_file_folder: Scope: A set of oscilloscope screenshots obtained during operation (refer to the paper), and their associated .csv files.
 
 :open_file_folder: Sketch: Illustration files for each of the figures present in the paper. Drawn in Sketch 68.2.
-
-## Reference :books:
-
-```
-@article{maddalena2021embedded,
-  title={Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks},
-  author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
-  journal={IEEE Open Journal of the Industrial Electronics Society},
-  volume={2},
-  pages={199--206},
-  year={2021},
-  publisher={IEEE}
-}
-```
