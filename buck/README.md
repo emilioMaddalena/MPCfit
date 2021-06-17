@@ -1,6 +1,7 @@
 
-:electric_plug:
+:electric_plug: Buck dc-dc converter
 
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
 
 ## Folders
 
@@ -21,8 +22,7 @@ Reference:
 
 ```
 @article{maddalena2021embedded,
-  title={Embedded PWM Predictive Control of DC-DC Power Converters 
-         Via Piecewise-Affine Neural Networks},
+  title={Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks},
   author={Maddalena, E. T. and Specq, M. W. F. and Wisniewski, V. L. and Jones, C. N.},
   journal={IEEE Open Journal of the Industrial Electronics Society},
   volume={2},
@@ -31,7 +31,3 @@ Reference:
   publisher={IEEE}
 }
 ```
-
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/picture.png)
-
-This picture shows an exact explicit MPC controller and its simplified representation learned with a small QP neural network.
