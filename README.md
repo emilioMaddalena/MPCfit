@@ -4,9 +4,9 @@ Lightweight MPC approximations through tailored neural networks.
 
 ## Description :books:
 
-We propose a particular feedforward neural network architecture to approximate model predictive controllers from data. The network features a quadratic program as one of its internal layers, employed to learn the MPC dual, as well as a final projection layer to guarantee feasibility of the control actions. It is shown that, given an appropriate network size, *any linear MPC controller can be learned*.
+We propose a particular feedforward neural network architecture to approximate model predictive controllers from data. The network features a quadratic program as one of its internal layers, employed to learn the MPC dual, as well as a final projection layer to guarantee feasibility of the control actions. It is shown that, given an appropriate network size, **any linear MPC controller can be learned**.
 
-The so-called piecewise-affine neural network (PWA-NN) was used to learn an MPC controller for a buck dc-dc converter, and then embedded on an STM32 microcontroller. The control computations were carried out periodically in *less than 30 microseconds*. This repository contains all the files related to the project.
+The so-called piecewise-affine neural network (PWA-NN) was used to learn an MPC controller for a buck dc-dc converter, and then embedded on an STM32 microcontroller. The control computations were carried out periodically in **less than 30 microseconds**. This repository contains all the files related to the project.
 
 Evolution across epochs:
 
