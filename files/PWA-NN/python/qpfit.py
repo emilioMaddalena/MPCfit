@@ -1,4 +1,8 @@
-#from qpth.qp import QPFunction
+# Supplementary material for the paper:
+# 'Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks'
+# 
+# Authors: E. T. Maddalena, M. W. F. Specq, V. L. Wisniewski and C. N. Jones
+# Date: June 2021
 
 import qpth
 from qpth.qp import QPFunction
@@ -8,9 +12,7 @@ import torch.nn as nn
 from torch.autograd import Function, Variable
 from torch.nn.parameter import Parameter
 import torch.nn.functional as F
-
 from torch.utils.data import Dataset
-
 import scipy.io as sio
 
 # Class to learn a QP from data
@@ -29,6 +31,7 @@ import scipy.io as sio
 # Note that linmap is affine
 
 class QPNet(nn.Module):
+
     def __init__(self, nVar, in_features, out_features, eps=1e-4, maxIter=5):
         super().__init__()
         self.eps = eps
@@ -50,7 +53,7 @@ class QPNet(nn.Module):
         # Output linear layer
         self.OutMap = nn.Linear(in_features=nVar, out_features=out_features) 
 
-        # Simplified projection layer (see paper Section 3.2)
+        # Simplified projection layer 
         self.umin = 0
         self.umax = 1
 
@@ -65,7 +68,7 @@ class QPNet(nn.Module):
 
     def forward(self, x):
         y1 = self.InMap(x)      
-        y2 = QPFunction(verbose=-1, eps=self.eps, maxIter=self.maxIter)(1e-3 * self.I + self.H.t().mm(self.H), \
+        y2 = QPFunction(verbose=-1, eps=self.eps, maxIter=self.maxIter)(1e-3 * self.I + self.H.t().mm(self.H), 
             self.InMap(x), self.meye, self.h, self.e, self.e)
         y3 = self.OutMap(y2)
 
@@ -83,13 +86,15 @@ class QPNet(nn.Module):
         def get_numpy(param):
             return param.detach().cpu().numpy()
 
-        dat = {'F':get_numpy(self.InMap.weight), 'f':get_numpy(self.InMap.bias),
-            'H':get_numpy(self.H),
-            'G':get_numpy(self.OutMap.weight), 'g':get_numpy(self.OutMap.bias),
-            'maxIter':self.maxIter,
-            'type':'QPNet'}
+        dat = {'F':get_numpy(self.InMap.weight), 
+               'f':get_numpy(self.InMap.bias),
+               'H':get_numpy(self.H),
+               'G':get_numpy(self.OutMap.weight), 
+               'g':get_numpy(self.OutMap.bias),
+               'maxIter':self.maxIter,
+               'type':'QPNet'}
+               
         sio.savemat('../data/' + datafile + '.mat', dat)
-
 
 class QPDataset(Dataset):
     def __init__(self, mat_file):

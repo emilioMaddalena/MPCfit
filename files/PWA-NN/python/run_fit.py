@@ -1,27 +1,27 @@
+# Supplementary material for the paper:
+# 'Embedded PWM Predictive Control of DC-DC Power Converters Via Piecewise-Affine Neural Networks'
+# 
+# Authors: E. T. Maddalena, M. W. F. Specq, V. L. Wisniewski and C. N. Jones
+# Date: June 2021
+
 import os
 import sys
 import csv
-#print(sys.version)
 
 import numpy as np
-#timeit
 import torch
 import pandas as pd
-
 from qpfit import QPNet
 from qpfit import QPDataset
-
 from torch.utils.data import Dataset, DataLoader
 import torch.nn as nn
 
-#torch.set_num_threads(os.cpu_count())
-#print("Number of threads = " + str(torch.get_num_threads()) + "\n")
-
+# Set the training parameters here
 param = dict()
 param['nVar'] = int(sys.argv[1]) # num of parameters to be used n_z
 param['maxIter'] = 10
 param['batch_size'] = 50
-param['numEpoch'] = 2
+param['numEpoch'] = 100
 param['log_interval'] = 10000
 param['learning_rate'] = 1e-3
 
@@ -41,14 +41,19 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # device = 'cpu'
 
 qp_loader = QPDataset(datafile)
-dataloader = DataLoader(qp_loader, batch_size=param['batch_size'],
-                        shuffle=True, pin_memory=True)
+dataloader = DataLoader(qp_loader, 
+                        batch_size=param['batch_size'],
+                        shuffle=True, 
+                        pin_memory=True)
 
 # Initialize the model
 nParam = qp_loader.x.shape[1]
 nInputs = qp_loader.y.shape[1]
 
-model = QPNet(param['nVar'], in_features=nParam, out_features=nInputs, maxIter=param['maxIter'])
+model = QPNet(param['nVar'], 
+              in_features=nParam, 
+              out_features=nInputs, 
+              maxIter=param['maxIter'])
 
 model = model.to(device)
 loss_fn = torch.nn.MSELoss()
@@ -97,16 +102,17 @@ print("best epoch: " + str(np.argmin(loss_vector)))
 print("minimal loss = " + str(min(loss_vector)) + "\n")
 print("###########################################\n")
 
+# Saving results in a csv log file
 results = {'nVar': [param['nVar']],
            'numEpochs': [param['numEpoch']],
            'bestEpoch': [np.argmin(loss_vector)],
            'loss': [min(loss_vector)]}
+
 struct = pd.DataFrame(results)
 logfile = '../data/info.csv'
 
 try:
     pd.read_csv(logfile)
     struct.to_csv(logfile, mode='a', header=False, index=False)
-
 except:
     struct.to_csv(logfile, mode='a', index=False)
