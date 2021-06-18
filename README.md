@@ -6,12 +6,12 @@ Lightweight MPC approximation through neural networks.
 
 Evolution across epochs:
 
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/pics/fitting.gif)
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/fitting.gif)
 
 
 Final results:
 
-<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/pics/comparison.png" width="700" height="595">
+<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/comparison.png" width="700" height="595">
 
 ## References :books:
 
