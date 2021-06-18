@@ -5,7 +5,7 @@ A schemtic of the dc-dc converter:
 
 ![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/buck.png)
 
-## Folders
+## Folders :open_file_folder:
 
 :open_file_folder: Documents: PDF documents relevant to the project.
 
