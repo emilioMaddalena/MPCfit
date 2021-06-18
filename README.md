@@ -10,12 +10,12 @@ The so-called piecewise-affine neural network (PWA-NN) was used to learn an MPC 
 
 Evolution across epochs:
 
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/fitting.gif)
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/files/figs/fitting.gif)
 
 
 Final results:
 
-<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/comparison.png" width="700" height="595">
+<img src="https://github.com/emilioMaddalena/MPCfit/blob/master/files/figs/comparison.png" width="700" height="595">
 
 ## References :books:
 
