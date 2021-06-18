@@ -3,7 +3,7 @@
 
 A schemtic of the dc-dc converter: 
 
-![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/buck/Sketch/buck.png)
+![alt text](https://github.com/emilioMaddalena/MPCfit/blob/master/files/Sketch/buck.png)
 
 ## Folders
 
